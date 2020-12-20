@@ -1,0 +1,144 @@
+@import url("create-edit.css");
+
+:root {
+	--bg: rgb(59, 59, 59);
+}
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	height: 100vh;
+	position: relative;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+	color: white;
+	width: 100%;
+	height: 8vh;
+	background-color: var(--bg);
+}
+
+header h1 {
+	line-height: 54px;
+	text-align: center;
+	font-size: 23px;
+}
+
+header div {
+	background-color: white;
+	width: 5%;
+	height: 4%;
+	position: absolute;
+	top: 12px;
+	right: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	transition: 0.5s;
+}
+
+header div a {
+	text-decoration: none;
+	color: var(--bg);
+}
+
+header div a:hover {
+	color: white;
+}
+
+header div:hover {
+	background-color: var(--bg);
+}
+
+.flex-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+aside {
+	width: 15%;
+	height: 87vh;
+	background-color: var(--bg);
+	border-top: white 1px solid;
+}
+
+aside nav ul {
+	margin-top: 30px;
+}
+
+ul li {
+	margin: 25px 0 25px 0;
+	padding: 5px;
+	cursor: pointer;
+}
+
+ul li:after {
+	content: "";
+	display: block;
+	margin: auto;
+	height: 1px;
+	width: 0px;
+	background: transparent;
+	transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+ul li:hover:after {
+	width: 100%;
+	background: white;
+}
+
+ul li a {
+	text-decoration: none;
+	color: white;
+	font-weight: lighter;
+	padding: 10px;
+}
+
+aside h2 {
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	margin-top: -35px;
+	margin-left: -2.7rem;
+}
+
+main {
+	padding: 12px;
+	width: 85%;
+}
+
+main p {
+	text-align: center;
+	padding: 10px;
+}
+
+.card {
+	box-shadow: 0px 3px 10px 3px rgba(32, 32, 32, 0.25);
+	width: 100%;
+	height: 80vh;
+	border-radius: 10px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 5%;
+	background-color: var(--bg);
+}
+footer p {
+	padding: 5px;
+	color: white;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 400;
+}
